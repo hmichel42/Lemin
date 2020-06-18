@@ -6,7 +6,7 @@
 /*   By: hmichel <hmichel@student.le-101.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/10 15:53:18 by cgarrot           #+#    #+#             */
-/*   Updated: 2020/06/18 18:40:51 by hmichel          ###   ########lyon.fr   */
+/*   Updated: 2020/06/18 19:15:51 by hmichel          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ int		check_ant_line(t_map *map, char **l, t_file_display **f_dis)
 	}
 	if (!*l || !insert_line_lst(map, l, f_dis, &chose))
 		return (-1);
-	if (l[0] == '\0' || !check_str_number(*l))
+	if (l[0][0] == '\0' || !check_str_number(*l))
 		map->cpt.error = 1;
 	map->inf.nb_fourmi = ft_atoi(*l);
 	ft_strdel(&(*l));

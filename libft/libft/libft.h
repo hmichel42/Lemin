@@ -1,14 +1,13 @@
 /* ************************************************************************** */
-/*                                                          LE - /            */
-/*                                                              /             */
-/*   libft.h                                          .::    .:/ .      .::   */
-/*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: cgarrot <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
-/*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2018/10/07 08:46:05 by cgarrot      #+#   ##    ##    #+#       */
-/*   Updated: 2020/02/06 15:06:14 by cgarrot     ###    #+. /#+    ###.fr     */
-/*                                                         /                  */
-/*                                                        /                   */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hmichel <hmichel@student.le-101.fr>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/10/07 08:46:05 by cgarrot           #+#    #+#             */
+/*   Updated: 2020/06/18 19:26:29 by hmichel          ###   ########lyon.fr   */
+/*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
@@ -17,6 +16,9 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stddef.h>
+# include <inttypes.h>
+# include <limits.h>
+# include <stdio.h>
 
 typedef struct	s_list
 {

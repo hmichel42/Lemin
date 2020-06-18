@@ -6,10 +6,9 @@
 #    By: hmichel <hmichel@student.le-101.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/06 14:32:49 by cgarrot           #+#    #+#              #
-#    Updated: 2020/06/18 18:45:30 by hmichel          ###   ########lyon.fr    #
+#    Updated: 2020/06/18 19:33:46 by hmichel          ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
-
 
 .PHONY: all clean fclean re
 
@@ -18,7 +17,6 @@ CC = gcc
 DEBUG = -fsanitize=address
 FLAGS = -Wall -Wextra -Werror
 INC = include/lemin.h
-HEADER = include
 OPTI = -O3 -march=native -flto -ffast-math
 
 #------------------------------------FILE--------------------------------------#
@@ -122,7 +120,7 @@ $(NAME): $(OBJ) $(INC)
 
 
 %.o: src/%.c $(INC) libft/libftprintf.a
-	@$(CC) $(FLAGS) -I $(HEADER) -o $@ -c $< $(OPTI)
+	@$(CC) $(FLAGS) -I $(INC) -o $@ -c $< $(OPTI)
 
 clean:
 	@echo "\033[1m|---------------------------------|\033[0m"
